@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class dcv {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter the day number:");
+        int day=input.nextInt();
+        if(day>=1&&day<=5) System.out.println("weekday");
+        else System.out.println("weekend");
+        
+    }
+}
