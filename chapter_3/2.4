@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class queston4 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the driving distance: ");
+        double drivingDistance = input.nextDouble();
+        System.out.println("Enter miles:" );
+        double milesPerGallon = input.nextDouble();
+        System.out.println("Enter price: ");
+        double pricePerGallon = input.nextDouble();
+        double gallon = drivingDistance/milesPerGallon;
+        double price = pricePerGallon*gallon;
+        System.out.println("The price is " + price);
+    }
+}
