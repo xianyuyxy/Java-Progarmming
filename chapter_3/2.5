@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class question5 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the length of the Hexagon: ");
+        double length = input.nextDouble();
+        double g = Math.sqrt(3);
+        double area = length*length*1.5*g;
+        System.out.println("The area of the Hexagon is " + area);
+    }
+}
