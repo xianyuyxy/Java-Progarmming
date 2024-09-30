@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class ComputeExpression {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter the money and gratuity rate:");
+        int money= input.nextInt();
+        int gratuity_rate= input.nextInt();
+        double gratuity=money*gratuity_rate/100.0;
+        double total=gratuity+money;
+        System.out.println("the total is "+total+" and the gratuity is "+gratuity);
+    }
+}
