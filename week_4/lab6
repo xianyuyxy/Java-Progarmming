@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+public class question3 {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        System.out.print("Enter weight: ");
+        double weight = input.nextDouble();
+        System.out.println("Enter height: ");
+        double height = input.nextDouble();
+        weight*=0.45359237;
+        height*=0.0254;
+        double BMI = weight / (height * height);
+        System.out.println("BMI is "+ BMI);
+    }
+}
