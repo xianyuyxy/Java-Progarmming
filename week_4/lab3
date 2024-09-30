@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class ComputeExpression {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        int today=2;
+        int circle=100%7;
+        int next=today+circle;
+        System.out.println("Next 100 days will be "+next);
+    }
+}
