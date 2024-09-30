@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class dcv {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter purchase amount:");
+        double amount=input.nextDouble();
+        double tax=0.06;
+        double sales=amount*tax;
+        System.out.println("sales tax is $"+sales);
+        
+    }
+}
