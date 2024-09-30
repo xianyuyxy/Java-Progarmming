@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class ComputeExpression {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter radius and length:");
+        double radius=input.nextDouble();
+        double length=input.nextDouble();
+        double area=radius*radius*Math.PI;
+        double volume =area*length;
+        System.out.println("The area is "+area+" the volume is "+volume);
+    }
+}
