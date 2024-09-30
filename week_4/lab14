@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class dcv {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int number1=(int)(System.currentTimeMillis()%10);
+        int number2=(int)(System.currentTimeMillis()/10%10);
+        System.out.println("what is "+number1+"+"+number2+"?");
+        int ans=input.nextInt();
+        System.out.println(number1+"+"+number2+"="+ans+" is "+(number1+number2==ans));
+    }
+}
