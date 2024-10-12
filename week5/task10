@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class WelcomeWithThreeMessage {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        String message="welcome to java";
+        System.out.println("the message in lowercase is: "+message.toLowerCase());
+        System.out.println("the message in uppercase is: "+message.toUpperCase());
+    }
+}
