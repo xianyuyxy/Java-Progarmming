@@ -1,0 +1,9 @@
+import java.util.Scanner;
+
+public class WelcomeWithThreeMessage {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        String message="welcome to java";
+        System.out.println("the first character in message is "+message.charAt(0));
+    }
+}
