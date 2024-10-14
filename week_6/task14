@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class WelcomeWithThreeMessage {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int tuition=7,count=0;
+        int money=10000;
+        int hope=2*money;
+        double m=money;
+        while(m<hope){
+            m*=1.07;
+            count++;
+        }
+        System.out.println("tuition will be doubled in "+count+" years");
+        System.out.println(String.format("tuition will be $%.2f in %d years", m, count));
+
+
+    }
+}
