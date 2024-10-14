@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class WelcomeWithThreeMessage {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int sum=0,number=0;
+        while(number<20){
+            number++;
+            sum+=number;
+            if(sum>=100)break;
+        }
+        System.out.println("thee number is "+number);
+        System.out.println("the sum is "+sum);
+    }
+}
