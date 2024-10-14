@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class WelcomeWithThreeMessage {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter first integer:");
+        int f=input.nextInt();
+        int a=f;
+        System.out.println("enter second integer:");
+        int s=input.nextInt();
+        int b=s;
+        if(f<s){
+            int tmp=f;
+            f=s;
+            s=tmp;
+        }
+        int r=f%s;
+        while(r!=0){
+            f=s;
+            s=r;
+            r=f%s;
+        }
+        System.out.println("the greatest common divisor for "+a+" and "+b+" is "+s);
+    }
+}
