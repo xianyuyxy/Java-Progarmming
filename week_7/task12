@@ -1,0 +1,28 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class classes {
+    public static void main(String[] args) {
+        System.out.println("enter full year ");
+        Scanner input=new Scanner(System.in);
+        int y=input.nextInt();
+        System.out.println("enter month as number between 1 and 12 :");
+        int m=input.nextInt();
+        printCan(y,m);
+
+    }
+    public static void printCan(int y,int m){
+        System.out.println("        March "+y);
+        System.out.println("---------------------------");
+        System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+        System.out.println("                  1   2   3");
+        System.out.println("  4   5   6   7   8   9  10");
+        System.out.println(" 11  12  13  14  15  16  17");
+        System.out.println(" 18  19  20  21  22  23  24");
+        System.out.println(" 25  26  27  28  29  30  ");
+
+
+    }
+
+
+}
