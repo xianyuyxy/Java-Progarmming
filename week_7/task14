@@ -1,0 +1,22 @@
+import java.util.Random;
+import java.util.Scanner;
+import java.util.SequencedCollection;
+
+public class classes {
+    public static void main(String[] args) {
+        System.out.println("enter first integer: ");
+        Scanner input=new Scanner(System.in);
+        int a=input.nextInt();
+        System.out.println("enter second integer: ");
+        int b=input.nextInt();
+        System.out.println("GCD is "+calculateGCD(a,b));
+    }
+    public static int calculateGCD(int a,int b) {
+        while (b != 0) {
+            int temp=b;
+            b=a%b;
+            a=temp;
+        }
+        return a;
+    }
+}
