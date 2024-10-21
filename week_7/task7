@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class classes {
+    public static void main(String[] args) {
+        int n1=1,n2=2;
+        System.out.println("befor invoking the swap method,n1 is "+n1+" n2 is "+n2);
+        swap(n1,n2);
+        System.out.println("after invoking the swap method,n1 is "+n1+" n2 is "+n2);
+
+    }
+    public static void swap(int a,int b){
+        System.out.println("inside the swap method");
+        System.out.println("befor invoking the swap method,n1 is "+a+" n2 is "+b);
+        int temp=a;
+        a=b;
+        b=temp;
+        System.out.println("after invoking the swap method,n1 is "+a+" n2 is "+b);
+    }
+}
