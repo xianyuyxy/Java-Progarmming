@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class classes {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        nprint("welcome to java",5);
+    }
+    public static void nprint(String a,int b){
+        for(int i=1;i<=b;i++){
+            System.out.println(a);
+        }
+    }
+}
