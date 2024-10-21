@@ -1,0 +1,31 @@
+import java.util.Random;
+import java.util.Scanner;
+import java.util.SequencedCollection;
+
+public class classes {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.print("enter a hexadecimal number: ");
+        String hexNumber = input.nextLine();
+        int decimalNumber = hexToDecimal(hexNumber);
+        System.out.println("The decimal equivalent of hexadecimal " + hexNumber + " is: " + decimalNumber);
+    }
+    public static int hexToDecimal(String hex) {
+        int decimalValue = 0;
+        int base = 1;
+        for (int i = hex.length() - 1; i >= 0; i--) {
+            char currentChar = hex.charAt(i);
+            if (currentChar >= '0' && currentChar <= '9') {
+                decimalValue += (currentChar - '0') * base;
+            } else if (currentChar >= 'A' && currentChar <= 'F') {
+                decimalValue += (currentChar - 'A' + 10) * base;
+            } else if (currentChar >= 'a' && currentChar <= 'f') {
+                decimalValue += (currentChar - 'a' + 10) * base;
+            }
+
+            base *= 16;
+        }
+
+        return decimalValue;
+    }
+}
