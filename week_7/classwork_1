@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class classes {
+    public static void main(String[] args){
+         int i=5,j=2;
+         int k=max(i,j);
+        System.out.println("the maximum of "+i+" and "+j+" is "+k);
+    }
+    public static int max(int a,int b){
+        int ans;
+        ans=(a>b)?a:b;
+        return ans;
+    }
+}
