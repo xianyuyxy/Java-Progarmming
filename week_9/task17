@@ -1,0 +1,30 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        int[] a={1,2};
+        System.out.println("before invoking swap");
+        System.out.println("array is {"+a[0]+" , "+a[1]+"}");
+        swap(a[0],a[1]);
+        System.out.println("after invoking swap");
+        System.out.println("array is {"+a[0]+" , "+a[1]+"}");
+
+        System.out.println("before invoking swapfirstTwoarray");
+        System.out.println("array is {"+a[0]+" , "+a[1]+"}");
+        swapfirstTwo(a);
+        System.out.println("after invoking swapfirstTwoarray");
+        System.out.println("array is {"+a[0]+" , "+a[1]+"}");
+    }
+    public static void swap(int n1,int n2){
+        int tmp=n1;
+        n1=n2;
+        n2=tmp;
+    }
+    public static void swapfirstTwo(int[] array){
+        int tmp=array[0];
+        array[0]=array[1];
+        array[1]=tmp;
+    }
+}
