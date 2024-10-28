@@ -11,5 +11,17 @@ public class test {
         for(int i=1;i<mylist.length;i++){
             System.out.printf(mylist[i]+" ");
         }
+        float max=mylist[0];
+        int index=0;
+        for(int i=1;i<mylist.length;i++){
+            if(mylist[i]>max){
+                max=mylist[i];
+                index=i;
+            }
+        }
+        System.out.println();
+        System.out.println("largest element is "+max);
+        System.out.println("the index of largest element is "+index);
     }
 }
+
