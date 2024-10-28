@@ -1,0 +1,23 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        float[] mylist=new float[5];
+        for(int i=1;i<mylist.length;i++){
+            mylist[i]=(float) Math.random()*10;
+        }
+        for(int i=1;i<mylist.length;i++){
+            System.out.printf(mylist[i]+" ");
+        }
+        float max=mylist[0];
+        for(int i=1;i<mylist.length;i++){
+            if(mylist[i]>max){
+                max=mylist[i];
+            }
+        }
+        System.out.println();
+        System.out.println("largest element is "+max);
+    }
+}
