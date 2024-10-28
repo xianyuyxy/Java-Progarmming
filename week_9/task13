@@ -1,0 +1,17 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        int[] sourceArr={2,3,1,5,10};
+        int[] targetArr=new int[sourceArr.length];
+        for(int i=0;i<sourceArr.length;i++){
+            targetArr[i]=sourceArr[i];
+        }
+        System.out.println("target array is: ");
+        for(int values:targetArr){
+            System.out.print(values+" ");
+        }
+    }
+}
