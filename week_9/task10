@@ -1,0 +1,14 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        String[] months={"January","February","March","April","May",
+        "June","July","August","September","October","November","December"};
+        System.out.println("enter a month number(1 to 12): ");
+        int monthNum=input.nextInt();
+        System.out.println("the month is "+months[monthNum-1]);
+        input.close();;
+    }
+}
