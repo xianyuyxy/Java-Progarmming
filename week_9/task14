@@ -1,0 +1,15 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        int[] sourceArr={2,3,1,5,10};
+        int[] targetArr=new int[sourceArr.length];
+        System.arraycopy(sourceArr,0,targetArr,0,sourceArr.length);
+        System.out.println("target array after copying: ");
+        for(int value:targetArr){
+            System.out.print(value+" ");
+        }
+    }
+}
