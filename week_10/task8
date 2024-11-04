@@ -1,0 +1,29 @@
+public class Circle2 {
+    public static void main(String[] args){
+        Rectangle rectangle1=new Rectangle();
+        System.out.println("the area of rectangle1 is "+rectangle1.getArea()+" and the perimeter is "+rectangle1.getPer());
+
+        Rectangle rectangle2=new Rectangle(4,40);
+        System.out.println("the area of rectangle1 is "+rectangle2.getArea()+" and the perimeter is "+rectangle2.getPer());
+
+        Rectangle rectangle3=new Rectangle(3.5,35.9);
+        System.out.println("the area of rectangle1 is "+rectangle3.getArea()+" and the perimeter is "+rectangle3.getPer());
+    }
+}
+class Rectangle{
+    double width,height;
+    Rectangle(){
+        width=1;
+        height=1;
+    }
+    Rectangle(double newWidth,double newHeight){
+        width=newWidth;
+        height=newHeight;
+    }
+    double getArea(){
+        return width*height;
+    }
+    double getPer(){
+        return 2*(width+height);
+    }
+}
