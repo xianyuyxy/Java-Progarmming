@@ -1,0 +1,42 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class text12 {
+    public static void main(String[] args) {
+        int[][] m=new int[4][4];
+        for(int i=0;i<m.length;i++){
+            for(int j=0;j<m[0].length;j++){
+                m[i][j]=(int)(Math.random()*2);
+            }
+        }
+        for(int i=0;i<m.length;i++){
+            for(int j=0;j<m[0].length;j++){
+                System.out.print(m[i][j]);
+            }
+            System.out.println();
+        }
+        int[][] index=new int[4][2];
+        for(int i=0;i<m.length;i++){
+            for(int j=0;j<m[0].length;j++){
+                index[i][0]+=m[i][j];
+                index[j][1]+=m[i][j];
+            }
+        }
+        int maxrow=0,row=0,maxcolumn=0,column=0;
+        for(int i=0;i<4;i++){
+            if(maxrow<index[i][0]){
+                maxrow=index[i][0];
+                row=i;
+            }
+            if(maxcolumn<index[i][1]){
+                maxcolumn=index[i][1];
+                column=i;
+            }
+        }
+        System.out.println("largest row index:"+row);
+        System.out.println("largest column index:"+column);
+    }
+}
+
