@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        Student stu=new Student("Alice",20);
+        System.out.println("Name: "+stu.getName());
+        System.out.println("Age: "+stu.getAge());
+
+        stu.setName("Bob");
+        stu.setAge(25);
+
+        stu.setAge(-5);
+
+        System.out.println("Updated Name: "+stu.getName());
+        System.out.println("Updated Age: "+stu.getAge());
+    }
+}
