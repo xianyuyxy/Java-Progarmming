@@ -1,0 +1,18 @@
+import java.util.*;
+public class TestLoanClass {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter annual interest rate (e.g. 8.25): ");
+        double annualInterestRate=input.nextDouble();
+
+        System.out.println("enter number of years(int): ");
+        int numberOfYears=input.nextInt();
+
+        System.out.println("enter loan amount(e.g. 120000.95)：");
+        double loanAmount=input.nextDouble();
+        input.close();
+        Loan loan=new Loan(annualInterestRate,numberOfYears,loanAmount);
+        System.out.printf("the loan was created on %s\n"+
+                "the monthly payment is %.2f\nThe total payment is %.2f\n",loan.getLoanDate(),loan.getMonthlyPayment(),loan.getTotalPayment());
+    }
+}
